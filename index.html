@@ -1,24 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
 
-    <!-- custom CSS -->
-    <link href="style.css" rel="stylesheet" type="text/css">
-    
+<head>
+	<meta charset="UTF-8" />
+	<title>Weather Dashboard</title>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<!-- custom CSS -->
+	<link href="style.css" rel="stylesheet" type="text/css">
+
 
 </head>
+
 <body>
 
+	<!-- Header -->
+	<header class="row">
+		<div class="col-12" id="title">
+			<h1>Weather Dashboard</h1>
+		</div>
+	</header>
 
-    
-    <!-- jQuery JS -->
+
+	<!-- grid system -->
+	<div class="container-lg" id="mainContainer">
+		<!-- row -->
+		<div class="row">
+
+
+
+			<!-- col 1 (searchbar and city history) -->
+			<div class="col-lg-3" id="searchAndHistory">
+
+				<!-- search bar and search history -->
+
+				<!-- search bar -->
+				<h2>Search for a city:</h2>
+				<div class="input-group mb-3" id="searchbar">
+					<input id="searchInput" type="text" class="form-control" placeholder="Search A City"
+						aria-label="Recipient's username" aria-describedby="button-addon2">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+					</div>
+				</div>
+
+				<!-- search history -->
+
+				<h3>Previous Searches:</h3>
+				<ul class="list-group" id="searchhistory"></ul>
+
+
+
+			</div>
+
+
+			<!-- col 2 (weather and 5 day history) -->
+			<div class="col-lg-9" id="weatherAndFiveday">
+
+				<!-- subgrid -->
+				<!-- container -->
+				<div class="container-fluid">
+					<!-- row 1 -->
+					<div class="row">
+						<!--col 1 current weather  -->
+						<div class="col-12">
+							<div class="card" id="currentWeatherBox">
+								<div class="card-body">
+									<div id="citynamedateandweather">
+									</div>
+									<img id="cityWeatherImg"></img>
+									<div id="weatherText">
+									</div>
+									<div id="temperature">
+									</div>
+									<div id="humidityPercent">
+									</div>
+									<div id="windspeed">
+									</div>
+									<div class="row">
+									<div class="col-2" style="width: fit-content;">
+									<h6 style="margin-top: 12px; font-weight: bolder; font-size: larger;">UV Index:</h6>
+									</div>
+									<div class="col" id="uvIndex">
+									</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- row 2 -->
+					<div class="row" id="fiveDayForecast">
+						<!-- col 1 -->
+						<div class="col-12">
+							<h2>5-Day Forecast:</h2>
+						</div>
+
+						<!-- col 2 -->
+						<div class="col-12" id="cardBox">
+
+						</div>
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+	</div>
+	</div>
+
+
+	<!-- jQuery JS -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 	<!-- Code to the JavaScript File -->
 	<script src="script.js"></script>
 </body>
+
 </html>

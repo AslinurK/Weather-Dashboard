@@ -1,0 +1,129 @@
+/* Stylesheet for weather dashboard homework */
+
+/* title bar */
+#title {
+    background: rgb(144, 194, 209);
+    height: 80px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* main body */
+
+.mainContainer {
+}
+
+/* search&history col */
+
+#searchAndHistory {
+    background: lightgray;
+    height: 650px;
+    flex: auto;
+}
+
+/* inside search&history col */
+#searchbar {
+    margin-top: 10px;
+}
+
+
+
+
+/* weather and five day forcast */
+
+#weatherAndFiveday {
+
+    background: whitesmoke;
+    /* flex: auto; */
+}
+
+/* current weather */
+
+#currentWeatherBox {
+   border: 2px solid darkslategrey;
+    height: 350px;
+    margin-top: 20px;
+}
+
+#cityWeatherImg {
+    height: 100px;
+    width: 125px;
+}
+
+h5 {
+    font-size: 35px;
+}
+
+/* five day forcast */
+
+#fiveDayForecast {
+    margin-top: 10px;
+}
+
+#cardBox {
+    display: flex;
+}
+
+
+.forecastBox {
+    border: 2px solid gray;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    background-color: rgb(144, 194, 209);
+    color: rgb(41, 39, 39);
+    text-align: center;
+}
+
+#forcastImgIcon {
+    height: 100px;
+    width: 125px;
+    margin-left: 5px;
+}
+
+/* uv Index Div */
+#uvIndex {
+    width: 200px;
+    height: 75px;
+    margin-bottom: 200px;
+}
+
+.uvIndexBox {
+    border: 2px solid gray;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+
+}
+
+#uvIndexTxt {
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* UV Index Sate */
+
+#uvLow {
+    background-color: green;
+}
+
+#uvMod {
+    background-color: yellow;
+}
+
+#uvHigh {
+    background-color: orange;}
+
+#uvVryHigh {
+    background-color: red;
+}
+
+#uvExtrm {
+    background-color: violet;
+}
